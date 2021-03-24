@@ -61,4 +61,4 @@ const main = (size) => {
   return mnemonic;
 };
 
-console.log(main(256));
+module.exports = main;
