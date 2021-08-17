@@ -6,9 +6,9 @@ const {
   calculateChecksum,
   splitIntoChunks,
   mapBinaryStringToByte,
-} = require("./utils");
+} = require("./bip39");
 
-const main = (size) => {
+const main = (size = 256) => {
   const randomBytes = createRandomBytes(size);
   const binaryString = bytesToBinary(randomBytes);
   const checksum = calculateChecksum(randomBytes);

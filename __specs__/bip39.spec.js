@@ -5,7 +5,7 @@ const {
   calculateChecksum,
   splitIntoChunks,
   mapBinaryStringToByte,
-} = require("../utils");
+} = require("../bip39");
 
 const BINARY = "000000010000001000000011000001000000010100000110";
 
